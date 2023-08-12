@@ -20,6 +20,10 @@
 		1D903C9F2A876FE8001DDEFA /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903C9E2A876FE8001DDEFA /* CatalogViewModel.swift */; };
 		1D903CA42A877068001DDEFA /* CatalogSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CA32A877068001DDEFA /* CatalogSection.swift */; };
 		1D903CA62A87CDBA001DDEFA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CA52A87CDBA001DDEFA /* MainView.swift */; };
+		1D903CA82A87DA8C001DDEFA /* MainOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CA72A87DA8C001DDEFA /* MainOptions.swift */; };
+		1D903CAA2A87DB94001DDEFA /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CA92A87DB94001DDEFA /* Banner.swift */; };
+		1D903CAC2A87DC4C001DDEFA /* SpecialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CAB2A87DC4C001DDEFA /* SpecialCard.swift */; };
+		1D903CAE2A87DD32001DDEFA /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CAD2A87DD32001DDEFA /* ProductCard.swift */; };
 		1DF56A6E2A867DAF00022070 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF56A6D2A867DAF00022070 /* NavigationBarView.swift */; };
 		1DF56A702A867DEC00022070 /* NavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF56A6F2A867DEC00022070 /* NavigationBarViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +43,10 @@
 		1D903C9E2A876FE8001DDEFA /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		1D903CA32A877068001DDEFA /* CatalogSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSection.swift; sourceTree = "<group>"; };
 		1D903CA52A87CDBA001DDEFA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1D903CA72A87DA8C001DDEFA /* MainOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOptions.swift; sourceTree = "<group>"; };
+		1D903CA92A87DB94001DDEFA /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		1D903CAB2A87DC4C001DDEFA /* SpecialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCard.swift; sourceTree = "<group>"; };
+		1D903CAD2A87DD32001DDEFA /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		1DF56A6D2A867DAF00022070 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		1DF56A6F2A867DEC00022070 /* NavigationBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +207,10 @@
 		1D903CA22A877027001DDEFA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1D903CA72A87DA8C001DDEFA /* MainOptions.swift */,
+				1D903CA92A87DB94001DDEFA /* Banner.swift */,
+				1D903CAB2A87DC4C001DDEFA /* SpecialCard.swift */,
+				1D903CAD2A87DD32001DDEFA /* ProductCard.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -284,9 +296,13 @@
 			files = (
 				1D903C9F2A876FE8001DDEFA /* CatalogViewModel.swift in Sources */,
 				1D903CA62A87CDBA001DDEFA /* MainView.swift in Sources */,
+				1D903CAE2A87DD32001DDEFA /* ProductCard.swift in Sources */,
+				1D903CAA2A87DB94001DDEFA /* Banner.swift in Sources */,
 				1D903C992A874446001DDEFA /* ProfileView.swift in Sources */,
+				1D903CA82A87DA8C001DDEFA /* MainOptions.swift in Sources */,
 				1DF56A702A867DEC00022070 /* NavigationBarViewModel.swift in Sources */,
 				1D2192002A863302001D5D0F /* BasketView.swift in Sources */,
+				1D903CAC2A87DC4C001DDEFA /* SpecialCard.swift in Sources */,
 				1D2191F72A862D46001D5D0F /* MainTabBar.swift in Sources */,
 				1D2191E72A862BDD001D5D0F /* ContentView.swift in Sources */,
 				1DF56A6E2A867DAF00022070 /* NavigationBarView.swift in Sources */,
