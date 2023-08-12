@@ -9,31 +9,72 @@ import SwiftUI
 
 struct MainTabBar: View {
     var body: some View {
-        TabView {
-            Text("Главная")
+        VStack {
+            TabView {
+                VStack {
+                    Text("Главная")
+                    
+                    Spacer()
+                    
+                    Rectangle()
+                        .fill(Color.tabBarColor)
+                        .frame(maxWidth: .infinity, maxHeight: 1)
+                        .shadow(color: .black, radius: 4, x: 0, y: 0)
+                }
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Главная")
                 }
-            
-            Text("Каталог")
+                
+                VStack {
+                    Text("Каталог")
+                    
+                    Spacer()
+                    
+                    Rectangle()
+                        .fill(Color.tabBarColor)
+                        .frame(maxWidth: .infinity, maxHeight: 1)
+                        .shadow(color: .black, radius: 4, x: 0, y: 0)
+                }
                 .tabItem {
                     Image(systemName: "square.grid.2x2")
                     Text("Каталог")
                 }
-            
-            BasketView()
+                
+                VStack {
+                    BasketView()
+                    
+                    Spacer()
+                    
+                    Rectangle()
+                        .fill(Color.tabBarColor)
+                        .frame(maxWidth: .infinity, maxHeight: 1)
+                        .shadow(color: .black, radius: 4, x: 0, y: 0)
+                }
                 .tabItem {
                     Image(systemName: "cart")
                     Text("Корзина")
                 }
-            
-            Text("Профиль")
+                
+                VStack {
+                    Text("Профиль")
+                    
+                    Spacer()
+                    
+                    Rectangle()
+                        .fill(Color.tabBarColor)
+                        .frame(maxWidth: .infinity, maxHeight: 1)
+                        .shadow(color: .black, radius: 4, x: 0, y: 0)
+                }
                 .tabItem {
                     Image(systemName: "person")
                     Text("Профиль")
                 }
+            }
+            .onAppear() {
+                UITabBar.appearance().backgroundColor = UIColor(Color.tabBarColor)
+            }
+            .accentColor(Color.defaultGreenColor)
         }
-        .accentColor(Color.defaultGreenColor)
     }
 }

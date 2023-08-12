@@ -14,6 +14,8 @@
 		1D2191F72A862D46001D5D0F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2191F62A862D46001D5D0F /* MainTabBar.swift */; };
 		1D2191FA2A86318C001D5D0F /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2191F92A86318C001D5D0F /* Color + Ext.swift */; };
 		1D2192002A863302001D5D0F /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2191FF2A863302001D5D0F /* BasketView.swift */; };
+		1DF56A6E2A867DAF00022070 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF56A6D2A867DAF00022070 /* NavigationBarView.swift */; };
+		1DF56A702A867DEC00022070 /* NavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF56A6F2A867DEC00022070 /* NavigationBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		1D2191F62A862D46001D5D0F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		1D2191F92A86318C001D5D0F /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1D2191FF2A863302001D5D0F /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		1DF56A6D2A867DAF00022070 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		1DF56A6F2A867DEC00022070 /* NavigationBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		1D2191E32A862BDD001D5D0F /* MySpar_TestTask */ = {
 			isa = PBXGroup;
 			children = (
+				1D2192012A863C59001D5D0F /* Components */,
 				1D2191F22A862CCD001D5D0F /* App */,
 				1D2191F32A862CD2001D5D0F /* Core */,
 				1D2191F82A863168001D5D0F /* Extensions */,
@@ -148,6 +153,23 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		1D2192012A863C59001D5D0F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1DF56A6C2A867D9600022070 /* NavigationBar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1DF56A6C2A867D9600022070 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				1DF56A6D2A867DAF00022070 /* NavigationBarView.swift */,
+				1DF56A6F2A867DEC00022070 /* NavigationBarViewModel.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF56A702A867DEC00022070 /* NavigationBarViewModel.swift in Sources */,
 				1D2192002A863302001D5D0F /* BasketView.swift in Sources */,
 				1D2191F72A862D46001D5D0F /* MainTabBar.swift in Sources */,
 				1D2191E72A862BDD001D5D0F /* ContentView.swift in Sources */,
+				1DF56A6E2A867DAF00022070 /* NavigationBarView.swift in Sources */,
 				1D2191E52A862BDD001D5D0F /* MySpar_TestTaskApp.swift in Sources */,
 				1D2191FA2A86318C001D5D0F /* Color + Ext.swift in Sources */,
 			);

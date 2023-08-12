@@ -12,7 +12,11 @@ struct BasketView: View {
     @State private var showAlert = false
     
     var body: some View {
-        NavigationStack {
+        VStack {
+            NavigationBarView(title: "Корзина")
+            
+            Spacer()
+            
             VStack(spacing: 30) {
                 Text("Ваша корзина пуста.\nДобавьте товары из каталога,\nчтобы сделать заказ!")
                     .multilineTextAlignment(.center)
@@ -36,26 +40,15 @@ struct BasketView: View {
                     )
                     .shadow(color: .gray, radius: 3, x: 3, y: 3)
                 }
-            }
-            .navigationTitle("Корзина")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "line.3.horizontal")
-                        .foregroundColor(Color.defaultGreenColor)
-                        .imageScale(.large)
-                        .onTapGesture {
-                            // TODO: - Action
-                            showAlert = true
-                        }
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Нажатие данной кнопки не реализовано!"),
+                        dismissButton: .default(Text("Закрыть"))
+                    )
                 }
             }
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Нажатие данной кнопки не реализовано!"),
-                    dismissButton: .default(Text("Закрыть"))
-                )
-            }
+            
+            Spacer()
         }
     }
 }
