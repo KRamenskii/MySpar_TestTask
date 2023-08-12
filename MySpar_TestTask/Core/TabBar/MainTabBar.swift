@@ -31,7 +31,10 @@ struct MainTabBar: View {
             .tag(0)
             
             VStack {
-                Text("Каталог")
+                CatalogView() { selectedTab in
+                    self.selectedTab = selectedTab
+                }
+                    .ignoresSafeArea()
                 
                 Spacer()
                 
