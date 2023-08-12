@@ -13,7 +13,7 @@ struct BasketView: View {
     
     var body: some View {
         VStack {
-            NavigationBarView(title: "Корзина")
+            NavigationBarView(title: "Корзина", isSearchable: nil)
             
             Spacer()
             

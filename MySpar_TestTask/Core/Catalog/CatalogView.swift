@@ -22,6 +22,7 @@ struct CatalogView: View {
             ZStack(alignment: .top) {
                 Image("img_1")
                     .resizable()
+                    .ignoresSafeArea()
                 
                 HStack {
                     Button {
@@ -102,7 +103,6 @@ struct CatalogView: View {
                 TopRoundedMask(radius: 20)
                     .fill(.white)
             )
-            .frame(width: .infinity)
             .padding(.top, -30)
         }
     }
@@ -112,8 +112,8 @@ extension CatalogView {
     
     // MARK: - Metric
     enum Metric {
-        static let topContainerHeight: CGFloat = UIScreen.main.bounds.size.height * 0.2
-        static let bottomContainerHeight: CGFloat = UIScreen.main.bounds.size.height * 0.8
+        static let topContainerHeight: CGFloat = UIScreen.main.bounds.size.height * 0.15
+        static let bottomContainerHeight: CGFloat = UIScreen.main.bounds.size.height * 0.85
         static let cellIndent: CGFloat = 15
         static let cellCornerRadius: CGFloat = 15
         static let sizeCell: CGFloat = (UIScreen.main.bounds.size.width - cellIndent * 3) / 2

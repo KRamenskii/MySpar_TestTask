@@ -9,9 +9,11 @@ import Foundation
 
 final class NavigationBarViewModel: ObservableObject {
     
-    @Published var title: String
+    @Published var title: String?
+    @Published var isSearchable: Bool?
     
-    init(title: String) {
+    init(title: String?, isSearchable: Bool?) {
         self.title = title
+        self.isSearchable = isSearchable
     }
 }

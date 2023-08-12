@@ -15,7 +15,7 @@ struct MainTabBar: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             VStack {
-                Text("Главная")
+                MainView()
                 
                 Spacer()
                 
@@ -34,7 +34,7 @@ struct MainTabBar: View {
                 CatalogView() { selectedTab in
                     self.selectedTab = selectedTab
                 }
-                    .ignoresSafeArea()
+//                .ignoresSafeArea()
                 
                 Spacer()
                 
