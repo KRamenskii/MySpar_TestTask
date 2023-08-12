@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BasketView: View {
     
-    @State private var showAlert = false
+    let selectedTab: (Int) -> Void
     
     var body: some View {
         VStack {
@@ -23,8 +23,7 @@ struct BasketView: View {
                     .foregroundColor(.black.opacity(0.7))
                 
                 Button {
-                    // TODO: - Action
-                    showAlert = true
+                    selectedTab(1)
                 } label: {
                     VStack {
                         Text("Перейти в каталог")
@@ -40,22 +39,10 @@ struct BasketView: View {
                     )
                     .shadow(color: .gray, radius: 3, x: 3, y: 3)
                 }
-                .alert(isPresented: $showAlert) {
-                    Alert(
-                        title: Text("Нажатие данной кнопки не реализовано!"),
-                        dismissButton: .default(Text("Закрыть"))
-                    )
-                }
             }
             
             Spacer()
         }
-    }
-}
-
-struct BasketView_Previews: PreviewProvider {
-    static var previews: some View {
-        BasketView()
     }
 }
 
