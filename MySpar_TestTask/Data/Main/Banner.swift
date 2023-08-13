@@ -15,10 +15,10 @@ struct Banner: Identifiable {
 extension Banner {
     
     static let banners: [Banner] = [
-        Banner(id: "1", imageTitle: "img_13"),
-        Banner(id: "2", imageTitle: "img_14"),
-        Banner(id: "3", imageTitle: "img_15"),
-        Banner(id: "4", imageTitle: "img_16"),
-        Banner(id: "5", imageTitle: "img_17")
+        Banner(id: "1", imageTitle: "img_14"),
+        Banner(id: "2", imageTitle: "img_15"),
+        Banner(id: "3", imageTitle: "img_16"),
+        Banner(id: "4", imageTitle: "img_17"),
+        Banner(id: "5", imageTitle: "img_18")
     ]
 }

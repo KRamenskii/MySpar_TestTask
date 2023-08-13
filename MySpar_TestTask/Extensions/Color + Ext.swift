@@ -23,4 +23,5 @@ extension Color {
     
     static let defaultGreenColor = Color(UIColor(hex: 0x17B742))
     static let tabBarColor = Color(UIColor(hex: 0xF7F7F7))
+    static let saleColor = Color(UIColor(hex: 0xC32324))
 }
